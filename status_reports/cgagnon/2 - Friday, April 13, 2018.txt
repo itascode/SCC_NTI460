@@ -1,0 +1,17 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 2
+Date: 04-13-18
+
+What have you completed since the last report?
+
+I've researched and read about YAML Ain't Markup Language. I am excited to start using this data-serialization
+language as it seems like it offers a lot more features than just plain JSON. I also got a kick out of
+the website http://yaml.org/
+
+What do you plan to complete by the next report?
+
+By the next report I plan to dig into Ansible and start learning about playbooks. I'd like to
+complete the Ansible tutorial link that was sent in our Slack Team but we'll see how far I get.
+I can/will also setup Trello + Slack integration after everyone is ready to go.
+
+What is getting in your way?
