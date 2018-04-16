@@ -1,0 +1,15 @@
+Student Name: Jonathan Wade
+Status Report #1
+Date: 4/16/2018
+
+What have you completed since the last report?
+
+This is my first status report. I have installed ansible. Read the documentation. Written and executed a playbook to spin up an AWS ec2 instance for use as a webserver and another playbook to remotely install apache on the webserver.
+
+What do you plan to complete by the next report?
+
+Work on assignnemnts and tasks as assigned in team meeting on Monday evening and in Canvas.
+
+What is getting in your way?
+
+Nothing, yet. I feel like I am on track. :)
