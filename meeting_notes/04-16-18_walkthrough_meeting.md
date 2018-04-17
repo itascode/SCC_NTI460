@@ -105,14 +105,14 @@ or
   * one for Xen
   * internal for servers themselves
   * Separate VLANS in different pairs. Pick a block of VLANS anything > 400 -> 407 mgmt
->    400 - mgmt
->    401 - internal
->    402 - external
->    403 - storage
+>    400 - mgmt  
+>    401 - internal  
+>    402 - external  
+>    403 - storage  
 
->    404 - mgmt
->    405 - internal
->    406 - external
+>    404 - mgmt  
+>    405 - internal  
+>    406 - external  
 >    407 - storage  
 
 
