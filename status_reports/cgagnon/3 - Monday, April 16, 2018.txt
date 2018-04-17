@@ -1,0 +1,22 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 3
+Date: 04-16-18
+
+What have you completed since the last report?
+
+Since the last report we've completed our walkthrough meeting.
+This meeting is important because it allows us to further understand what we'll
+be doing throughout the next two months of this course. I have written notes and
+am using them to guide myself through the different components of our practicum.
+
+What do you plan to complete by the next report?
+
+By the next report I will have learned more about Ansible and/or reviewed the
+rough draft of our proposal.
+
+What is getting in your way?
+
+I would also like to be able to better interpret the specifics of what we'll
+actually be implementing. More bluntly, being able to understand how the
+processes work together is currently getting in my way. I'd like to understand
+them further at the specific configuration level.
