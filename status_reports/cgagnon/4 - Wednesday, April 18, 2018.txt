@@ -1,0 +1,25 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 4
+Date: 04-18-18
+
+What have you completed since the last report?
+
+Today I did a couple things to wrap my head around this project.
+Fadil and I went to the server room to check the configuration, and I also
+learned about how some of the networking could be implemented. What I learned is that I don't know
+how the actual installation of an OS works on a blade server yet, and I find this
+fascinating. I "burned" an image with CentOS on it to prepare for installation,
+just in case I get the chance to participate at that point.
+
+What do you plan to complete by the next report?
+
+By the next report I hope to have seen and reviewed the proposal for our statement
+of work. I also will be looking at Ansible at the latest this weekend and finally
+writing some playbooks and other code for this class.
+
+What is getting in your way?
+
+I'd like to be able to automate the process of installing OpenStack and XenServer
+on all of the compute nodes by getting everyone to participate in writing a big script;
+I have no idea how to coordinate this type of effort. Also time management is rearing its
+head and I will need to ensure that I'm able to contribute whenever possible.
