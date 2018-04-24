@@ -1,0 +1,69 @@
+enable
+conf t
+
+ip routing
+
+int ran f4/0/1-48
+shut
+
+vlan 500
+name mgmt
+vlan 501
+name internal
+vlan 502
+name external
+vlan 503
+name storage
+
+
+
+int ran f4/0/1-10
+switchport trunk
+switchport mode trunk allowed vlan 500,501,502,503
+
+#If script doesn't allow inter-VLAN communication...
+#int lo1
+#ip addr 1.1.1.1 255.255.255.255
+#no shut
+
+int ran f4/0/1-2
+channel-group 1 mode active
+no shut
+
+int ran f4/0/3-4
+channel-group 2 mode active
+no shut
+
+int ran f4/0/5-6
+channel group 3 mode active
+no shut
+
+int ran f4/0/7-8
+channel group 4 mode active
+no shut
+
+int ran f4/0/9-10
+channel group 5 mode active
+no shut
+
+int vlan 500
+ip addr 10.5.0.1 255.255.255.0
+no shut
+
+int vlan 501
+ip addr 10.5.1.1 255.255.255.0
+no shut
+
+int vlan 502
+ip addr 10.5.2.1 255.255.255.0
+no shut
+
+int vlan 503
+ip addr 10.5.3.1 255.255.255.0
+no shut
+
+#Needs to be edited to reflect the actual IP leading outside.
+#ip route 0.0.0.0 0.0.0.0 <ip to outside>
+
+do wr
+
