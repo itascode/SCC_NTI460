@@ -1,0 +1,21 @@
+Student Name: Yolman Torrez
+Status Report #4
+Date: 04/23/2018  
+
+What have you completed since the last report?
+
+We finally could have some installation on the servers.
+due to the incompatibility of software on the blade centers
+we had to move the whole project into individual boxes that 
+we will interconnect. Today, I installed Xen and CentOS and configure the
+access of the switch
+
+
+What do you plan to complete by the next report?
+
+I expect that my team and I will have been installed the software on each 
+server and configure them. also, I hope to start working on the LAN connectivity
+
+What is getting in your way?
+
+The disponibility of the team will be an small inconvenience
