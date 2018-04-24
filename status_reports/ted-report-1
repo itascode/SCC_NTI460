@@ -1,0 +1,13 @@
+Student Name: Ted Jensen
+Status Report #1
+Date: 4/22/2018
+
+What have you completed since the last report?
+I have managed to get into the target switch. May or may not still be relevant by next report.
+
+What do you plan to complete by the next report?
+If the project objectives are still the same as they are currently, then I will hope to have all of the necessary Cisco scripting and implementation done.
+
+What is getting in your way?
+Currently, all of the public-facing interfaces on the switch are flapping wildly. The switch cannot access the outside internet. At first, I thought it was an etherchannel issue, but trunking and port-channeling did not fix it. 
+Should everything be the same for next session, I will investigate possible STP failure causes.
