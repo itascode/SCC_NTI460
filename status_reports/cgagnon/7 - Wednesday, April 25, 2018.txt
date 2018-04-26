@@ -1,0 +1,25 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 7
+Date: 04-25-18
+
+What have you completed since the last report?
+
+I have labeled the machines and setup our Trello team so that we're able to communicate
+more efficiently and effectively. The Trello will be especially useful as it allows
+us to gain insight into change management and gives everyone an easy way to see
+the work that has been done and will be done; all of this can be completed in Trello
+or even through our Slack team.
+
+What do you plan to complete by the next report?
+
+By the next report I'll have looked into the utility of our Trello and applied some aspect
+of it to our Practicum (probably generating tasks). I am also planning on learning
+more about Ansible and posting in the discussion, but I am not sure if that'll get
+done by the next status report.
+
+What is getting in your way?
+
+Being able to understand when changes are being applied to our infrastructure is
+definitely a challenge that needs to be addressed; I'm seeing changes happening
+without any communication on our Slack prior to their implementation; I am hoping
+that we'll be able to guide ourselves through via using our tools to do so.
