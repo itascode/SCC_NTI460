@@ -1,0 +1,19 @@
+Student Name: Yolman Torrez
+Status Report #5
+Date: 04/26/2018
+
+What have you completed since the last report?
+
+I created the first VM management with Centos on the cotronller server
+and I enabled SSH to communicate to each server without unplugging the video cable.
+Also, I created a VLAN with internet connection to facilitate the installation of packages
+on each server (packages like ansible, openssh, vnc and so on)
+
+What do you plan to complete by the next report?
+
+I plan to complete all installation of the softwares and configuration of the ISCSI target and
+initiators
+
+What is getting in your way?
+
+so far, nothing is getting in my way
