@@ -3,67 +3,70 @@ conf t
 
 ip routing
 
-int ran f4/0/1-48
-shut
+int ran f4/0/1-48 ! don't shutdown interfaces until we know how to implement Internet configuration in this script
+!shut
 
 vlan 500
-name mgmt
-vlan 501
-name internal
-vlan 502
-name external
-vlan 503
-name storage
+name nti460management
+vlan 510
+name nti460internal
+vlan 520
+name nti460storage
 
 
+int ran f4/0/17-22
+desc To Compute Nodes 1-3
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 500,510
+no shut
 
-int ran f4/0/1-10
-switchport trunk
-switchport mode trunk allowed vlan 500,501,502,503
+int ran f4/0/23-24
+desc To iSCSI
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 510,520
+no shut 
 
-#If script doesn't allow inter-VLAN communication...
-#int lo1
-#ip addr 1.1.1.1 255.255.255.255
-#no shut
+int ran f4/0/25-26
+desc To Controller
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 500
+channel-group 5 mode active
+no shut
 
-int ran f4/0/1-2
+int ran f4/0/17-18
 channel-group 1 mode active
 no shut
 
-int ran f4/0/3-4
+int ran f4/0/19-20
 channel-group 2 mode active
 no shut
 
-int ran f4/0/5-6
-channel group 3 mode active
+int ran f4/0/21-22
+channel-group 3 mode active
 no shut
 
-int ran f4/0/7-8
-channel group 4 mode active
+int ran f4/0/23-24
+channel-group 4 mode active
 no shut
 
-int ran f4/0/9-10
-channel group 5 mode active
+int ran f4/0/25-26
+channel-group 5 mode active
 no shut
 
 int vlan 500
 ip addr 10.5.0.1 255.255.255.0
 no shut
 
-int vlan 501
+int vlan 510
 ip addr 10.5.1.1 255.255.255.0
 no shut
 
-int vlan 502
+int vlan 520
 ip addr 10.5.2.1 255.255.255.0
 no shut
 
-int vlan 503
-ip addr 10.5.3.1 255.255.255.0
-no shut
-
-#Needs to be edited to reflect the actual IP leading outside.
-#ip route 0.0.0.0 0.0.0.0 <ip to outside>
 
 do wr
-
