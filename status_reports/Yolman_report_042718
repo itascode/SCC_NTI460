@@ -1,0 +1,18 @@
+Student Name: Yolman Torrez
+Status Report #6
+Date:04/27/2018
+
+What have you completed since the last report?
+
+my team and I created the windows VM that holds the xen-center. I also opened
+the SSH communication with all devices into the lisanet network, so that any person on the team
+can connect without being in the server room.
+
+What do you plan to complete by the next report?
+
+for the next report, I expect to open the ISCSI communication between the 
+target and the initiators and create the VLAN and Trunk on the switch.
+
+What is getting in your way?
+
+I have to keep researching about ISCSI functionality to accomplish the objective
