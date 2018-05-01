@@ -1,0 +1,15 @@
+Student Name: Jonathan Wade
+Status Report # 7
+Date: 4/30/2018
+
+What have you completed since the last report?
+
+Met with the class on Saturday to work on the hardware. Specifically, networking and start testing parts of the Ansible-OpenStack deployment. Research on deploying the ssh keys for Ansible via script and still maintaining access for outside ssh.
+
+What do you plan to complete by the next report?
+
+I plan to have the ssh keys figured out and networking configured in the script/playbooks. Meet with team Tuesday afternoon.
+
+What is getting in your way?
+
+I am not able to meet in the mornings and I feel like I am missing a lot of what is going on and important configuration steps. The documentation by the team is great, but I still have questions and need some face-to-face chats.
