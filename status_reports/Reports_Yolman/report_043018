@@ -1,0 +1,19 @@
+Student Name: Yolman Torrez
+Status Report #7
+Date: 04/30/2018
+
+What have you completed since the last report?
+
+I reconfigured the ISCSI target and install the initiators on the compute node 1.
+I could mount the disk on the client. however, the node had a comflict with the disk.
+it might have a bug somewhere. I also tried to establish the initiator on the node 2
+but it couldn't connect with the target
+
+What do you plan to complete by the next report?
+
+I expect to debug and solve the problems I had today with the iscsi and I hope  that the 
+target and initiator work perfectly
+
+What is getting in your way?
+
+It will depend on the time a give to this task and there is not obstacle to work on it 
