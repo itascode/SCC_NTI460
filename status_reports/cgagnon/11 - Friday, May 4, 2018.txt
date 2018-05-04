@@ -1,0 +1,24 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 11
+Date: 05-3-18
+
+What have you completed since the last report?
+
+Since the last report I've been able to learn some things about Ansible and
+discuss possible change management policies with some of our group members. A
+decision ended up being made which is halting all changes on the project until
+we meet as a group.
+
+
+What do you plan to complete by the next report?
+
+During our next meeting I am confident that we'll be able to be successful
+with any new policies which are implemented and I'm hoping that getting together
+and just talking about the Practicum and who will be delegated to do what when
+ends up being the key to us being more productive as a team.
+
+What is getting in your way?
+
+I believe that learning more about Ansible and carving out time to do that
+would be my current limiter. I would like to get the discussion done but also show
+that I understand enough about Ansible to be able to do useful things with it. 
