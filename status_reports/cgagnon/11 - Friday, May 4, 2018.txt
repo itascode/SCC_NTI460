@@ -1,6 +1,6 @@
 Student Name: Cody Antonio Gagnon
 Status Report # 11
-Date: 05-3-18
+Date: 05-4-18
 
 What have you completed since the last report?
 
@@ -21,4 +21,4 @@ What is getting in your way?
 
 I believe that learning more about Ansible and carving out time to do that
 would be my current limiter. I would like to get the discussion done but also show
-that I understand enough about Ansible to be able to do useful things with it. 
+that I understand enough about Ansible to be able to do useful things with it.
