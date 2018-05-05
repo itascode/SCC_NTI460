@@ -35,7 +35,7 @@ switchport mode access
 switchport access vlan 80
 no shut
 
-int ran f4/0/27-30
+int ran f4/0/29-32
 desc To access switch - VLANs 80, 400-402
 switchport mode trunk
 switchport trunk encapsulation dot1q
