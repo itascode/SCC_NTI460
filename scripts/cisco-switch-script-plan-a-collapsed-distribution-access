@@ -14,6 +14,18 @@ name nti460internal
 vlan 402
 name nti460storage
 
+! EXTERNAL
+
+int f4/0/2
+desc External VLAN from Lisanet
+switchport mode access
+switchport access vlan 80
+no shut
+
+
+! COMPUTE NODES
+
+! NODE 1
 
 int f4/0/17
 desc To compute node 1 - Management VLAN
@@ -33,6 +45,7 @@ switchport mode access
 switchport access vlan 402
 no shut
 
+! NODE 2
 
 int f4/0/20
 desc To compute node 2 - Management VLAN
@@ -41,7 +54,7 @@ switchport access vlan 400
 no shut
 
 int f4/0/21
-desc To compute node 3 - Internal VLAN
+desc To compute node 2 - Internal VLAN
 switchport mode access
 switchport access vlan 401
 no shut
@@ -51,6 +64,8 @@ desc To compute node 2 - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
+
+! NODE 3
 
 int f4/0/23
 desc To compute node 3 - Management VLAN
@@ -70,6 +85,7 @@ switchport mode access
 switchport access vlan 402
 no shut
 
+
 ! CONTROLLER
 
 int f4/0/26
@@ -77,6 +93,7 @@ desc To controller - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
+
 
 ! STORAGE
 
@@ -92,14 +109,7 @@ switchport mode access
 switchport access vlan 402
 no shut
 
-int f4/0/29
-desc To controller - External VLAN from Lisanet
-switchport mode access
-switchport access vlan 80
-no shut
-
-! since the controller has three vlans (mgmt, external, and storage)
-! we are going to
+! VLAN interface IP Addresses
 
 int vlan 400
 ip addr 10.4.0.1 255.255.255.0
