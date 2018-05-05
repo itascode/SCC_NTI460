@@ -1,0 +1,95 @@
+! our plan A implementation is barebones without needing any extra software
+! or hardware than a base 3570 switch
+
+enable
+conf t
+
+! allows us to route between vlans
+ip routing
+
+vlan 400
+name nti460management
+vlan 401
+name nti460internal
+vlan 402
+name nti460storage
+
+
+int f4/0/17
+desc To compute node 1 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/18
+desc To compute node 1 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/19
+desc To compute node 2 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/20
+desc To compute node 2 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/21
+desc To compute node 3 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/22
+desc To compute node 3 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/23
+desc To controller - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/24
+desc To controller - External VLAN from Lisanet
+switchport mode access
+switchport access vlan 80
+no shut
+
+int f4/0/25
+desc To iSCSI - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/26
+desc To iSCSI - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
+
+int vlan 400
+ip addr 10.4.0.1 255.255.255.0
+no shut
+
+int vlan 401
+ip addr 10.4.10.1 255.255.255.0
+no shut
+
+int vlan 402
+ip addr 10.4.20.1 255.255.255.0
+no shut
+
+int vlan 80
+! current address for vlan 80, may change
+ip addr 172.31.80.25
+no shut
+
+do wr
