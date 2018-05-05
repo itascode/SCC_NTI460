@@ -62,18 +62,83 @@ switchport access vlan 80
 no shut
 
 int f4/0/25
-desc To ISCSI - Internal VLAN
+desc To controller - Storage VLAN (Redundancy)
 switchport mode access
-switchport access vlan 400
+switchport access vlan 402
 no shut
 
-int f4/0/26
+int f4/0/27
+desc To ISCSI - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/28
 desc To ISCSI - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
 
-int ran f4/0/27-30
+int ran f4/0/33-44
+switchport mode access
+
+int f4/0/33
+desc To compute node 1 - Management VLAN (Redundancy)
+switchport access vlan 400
+no shut
+
+int f4/0/34
+desc To compute node 1 - Internal VLAN (Redundancy)
+switchport access vlan 401
+no shut
+
+int f4/0/35
+desc To compute node 2 - Management VLAN (Redundancy)
+switchport access vlan 400
+no shut
+
+int f4/0/36
+desc To compute node 2 - Internal VLAN (Redundancy)
+switchport access vlan 401
+no shut
+
+int f4/0/37
+desc To compute node 3 - Management VLAN (Redundancy)
+switchport access vlan 400
+no shut
+
+int f4/0/38
+desc To compute node 3 - Internal VLAN (Redundancy)
+switchport access vlan 401
+no shut
+
+int f4/0/39
+desc To controller - Management VLAN (Redundancy)
+switchport access vlan 400
+no shut
+
+int f4/0/40
+desc To controller - External VLAN (Redundancy)
+switchport access vlan 80
+no shut
+
+int f4/0/41
+desc To controller - Storage VLAN (Redundancy)
+switchport access vlan 402
+no shut
+
+int f4/0/43
+desc To ISCSI - Internal VLAN (Redundancy)
+switchport access vlan 401
+no shut
+
+int f4/0/44
+desc To ISCSI - Storage VLAN (Redundancy)
+switchport access vlan 402
+no shut
+
+
+int ran f4/0/29-32
 desc To distribution switch - VLANs 80, 400-402
 switchport mode trunk
 switchport trunk encapsulation dot1q
