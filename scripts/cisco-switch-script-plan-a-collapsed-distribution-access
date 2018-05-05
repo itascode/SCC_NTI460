@@ -7,6 +7,9 @@ conf t
 ! allows us to route between vlans
 ip routing
 
+! give a default route to the default gateway
+ip route 0.0.0.0 0.0.0.0 172.31.80.1
+
 vlan 400
 name nti460management
 vlan 401
@@ -125,7 +128,9 @@ no shut
 
 int vlan 80
 ! current address for vlan 80, may change
-ip addr 172.31.80.25
+ip addr 172.31.80.25 255.255.255.0
 no shut
 
-do wr
+end
+
+wr
