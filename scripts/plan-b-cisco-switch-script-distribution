@@ -1,0 +1,44 @@
+enable
+conf t
+
+ip routing
+
+int ran f4/0/1-48 
+shut
+
+vlan 400
+name nti460management
+vlan 401
+name nti460internal
+vlan 402
+name nti460storage
+
+int vlan 80
+ip addr 172.31.80.25 255.255.255.0
+no shut
+
+int vlan 400
+ip addr 10.4.0.1 255.255.255.0
+no shut
+
+int vlan 401
+ip addr 10.4.10.1 255.255.255.0
+no shut
+
+int vlan 402
+ip addr 10.4.20.1 255.255.255.0
+no shut
+
+int f4/0/2
+desc Outside access
+switchport mode access
+switchport access vlan 80
+no shut
+
+int ran f4/0/27-30
+desc To access switch - VLANs 80, 400-402
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 80,400,401,402
+channel-group 22 mode active
+no shut
