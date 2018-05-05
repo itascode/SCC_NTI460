@@ -1,0 +1,83 @@
+enable
+conf t
+
+ip routing
+
+int ran f4/0/1-48 
+!shut
+
+vlan 400
+name nti460management
+vlan 401
+name nti460internal
+vlan 402
+name nti460storage
+
+int f4/0/17
+desc To compute node 1 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/18
+desc To compute node 1 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/19
+desc To compute node 2 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/20
+desc To compute node 2 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/21
+desc To compute node 3 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/22
+desc To compute node 3 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int f4/0/23
+desc To controller - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/24
+desc To controller - External VLAN
+switchport mode access
+switchport access vlan 80
+no shut
+
+int f4/0/25
+desc To ISCSI - Internal VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int f4/0/26
+desc To ISCSI - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
+
+int ran f4/0/27-30
+desc To distribution switch - VLANs 80, 400-402
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 80,400,401,402
+channel-group 22 mode active
+no shut
+
