@@ -14,7 +14,7 @@ vlan 402
 name nti460storage
 
 int vlan 80
-ip addr 172.31.80.132 255.255.255.0
+ip addr 172.31.80.25 255.255.255.0
 no shut
 
 int vlan 400
