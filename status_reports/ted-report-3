@@ -1,0 +1,12 @@
+Student Name: Ted Jensen
+Status Report #3
+Date: 5/5/2018
+
+What have you completed since the last report?
+Somewhat of an overhaul on the Cisco equipment script. With the change to workstations from the Bladecenter, I hadn't realized that etherchannel setups would be impractical. So with that, Cody and I worked on two possible solutions that could be put in place and hammered out two sets of Cisco scripts. As we weren't functionally aware that Cisco switches had to be connected to other switches for inter-VLAN routing to happen (but were told that was the case), one script featured the switch distribution and access layers collapsed. Upon testing using one of the NICs on the ISCSI box, inter-VLAN routing would not work. As such, we reset the NIC back to the way it was and plugged the ISCSI box back into an access port to the internet. I then converted the collapsed switch into a proper access layer switch.
+
+What do you plan to complete by the next report?
+Hopefully we will be able to fully conquer this Cisco bottleneck so that Jonathan has the green light for deployment.
+
+What is getting in your way?
+We are currently waiting on approval from David to move an additional switch over, as well as acquiring several more straight-through cables for the redundant links.
