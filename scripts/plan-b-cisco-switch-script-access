@@ -3,7 +3,6 @@ conf t
 
 ip routing
 
-
 vlan 400
 name nti460management
 vlan 401
@@ -157,8 +156,8 @@ no shut
 
 int ran g1/0/29-32
 desc To distribution switch - VLANs 80, 400-402
-switchport mode trunk
 switchport trunk encapsulation dot1q
+switchport mode trunk
 switchport trunk allowed vlan 80,400,401,402
 channel-group 22 mode active
 no shut
