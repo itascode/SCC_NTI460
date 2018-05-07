@@ -10,6 +10,11 @@ name nti460internal
 vlan 402
 name nti460storage
 
+
+! COMPUTE NODES
+
+! NODE 1
+
 int g1/0/17
 desc To compute node 1 - Management VLAN
 switchport mode access
@@ -27,6 +32,9 @@ desc To compute node 1 - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
+
+
+! NODE 2
 
 int g1/0/20
 desc To compute node 2 - Management VLAN
@@ -46,6 +54,9 @@ switchport mode access
 switchport access vlan 402
 no shut
 
+
+! NODE 3
+
 int g1/0/23
 desc To compute node 3 - Management VLAN
 switchport mode access
@@ -64,11 +75,17 @@ switchport mode access
 switchport access vlan 402
 no shut
 
+
+! CONTROLLER
+
 int g1/0/26
 desc To controller - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
+
+
+! STORAGE
 
 int g1/0/27
 desc To ISCSI - Management VLAN
@@ -81,6 +98,14 @@ desc To ISCSI - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
+
+
+! *** REDUNDANCY ***
+
+
+! COMPUTE NODES
+
+! NODE 1
 
 int g1/0/33
 switchport mode access
@@ -100,6 +125,9 @@ desc To compute node 1 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
+
+! NODE 2
+
 int g1/0/36
 switchport mode access
 desc To compute node 2 - Management VLAN (Redundancy)
@@ -117,6 +145,9 @@ switchport mode access
 desc To compute node 2 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
+
+
+! NODE 3
 
 int g1/0/39
 switchport mode access
@@ -136,11 +167,17 @@ desc To compute node 3 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
+
+! CONTROLLER
+
 int g1/0/42
 switchport mode access
 desc To controller - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
+
+
+! STORAGE
 
 int g1/0/43
 switchport mode access
@@ -154,8 +191,14 @@ desc To ISCSI - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
+
+! PORT CHANNEL
+! Set to trunk to distribution switch
+
 int ran g1/0/29-32
 desc To distribution switch - VLANs 80, 400-402
+! just in case, ensure switches aren't in trunk mode first
+no switchport mode trunk
 switchport trunk encapsulation dot1q
 switchport mode trunk
 switchport trunk allowed vlan 80,400,401,402
