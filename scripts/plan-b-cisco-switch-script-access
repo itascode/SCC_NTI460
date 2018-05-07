@@ -3,8 +3,6 @@ conf t
 
 ip routing
 
-!int ran f4/0/1-48 
-!shut
 
 vlan 400
 name nti460management
@@ -13,155 +11,154 @@ name nti460internal
 vlan 402
 name nti460storage
 
-int f4/0/17
+int g1/0/17
 desc To compute node 1 - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
 
-int f4/0/18
+int g1/0/18
 desc To compute node 1 - Internal VLAN
 switchport mode access
 switchport access vlan 401
 no shut
 
-int f4/0/19
+int g1/0/19
 desc To compute node 1 - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
 
-int f4/0/20
+int g1/0/20
 desc To compute node 2 - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
 
-int f4/0/21
+int g1/0/21
 desc To compute node 2 - Internal VLAN
 switchport mode access
 switchport access vlan 401
 no shut
 
-int f4/0/22
+int g1/0/22
 desc To compute node 2 - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
 
-int f4/0/23
+int g1/0/23
 desc To compute node 3 - Management VLAN
 switchport mode access
 switchport access vlan 401
 no shut
 
-int f4/0/24
+int g1/0/24
 desc To compute node 3 - Internal VLAN
 switchport mode access
 switchport access vlan 401
 no shut
 
-int f4/0/25
+int g1/0/25
 desc To compute node 3 - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
 
-int f4/0/26
+int g1/0/26
 desc To controller - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
 
-int f4/0/27
+int g1/0/27
 desc To ISCSI - Management VLAN
 switchport mode access
 switchport access vlan 400
 no shut
 
-int f4/0/28
-desc To ISCSI - Storage VLAN 
+int g1/0/28
+desc To ISCSI - Storage VLAN
 switchport mode access
 switchport access vlan 402
 no shut
 
-int f4/0/33
+int g1/0/33
 switchport mode access
 desc To compute node 1 - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
 
-int f4/0/34
+int g1/0/34
 switchport mode access
 desc To compute node 1 - Internal VLAN (Redundancy)
 switchport access vlan 401
 no shut
 
-int f4/0/35
+int g1/0/35
 switchport mode access
 desc To compute node 1 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
-int f4/0/36
+int g1/0/36
 switchport mode access
 desc To compute node 2 - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
 
-int f4/0/37
+int g1/0/37
 switchport mode access
 desc To compute node 2 - Internal VLAN (Redundancy)
 switchport access vlan 401
 no shut
 
-int f4/0/38
+int g1/0/38
 switchport mode access
 desc To compute node 2 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
-int f4/0/39
+int g1/0/39
 switchport mode access
 desc To compute node 3 - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
 
-int f4/0/40
+int g1/0/40
 switchport mode access
 desc To compute node 3 - Internal VLAN (Redundancy)
 switchport access vlan 401
 no shut
 
-int f4/0/41
+int g1/0/41
 switchport mode access
 desc To compute node 3 - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
-int f4/0/42
+int g1/0/42
 switchport mode access
 desc To controller - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
 
-int f4/0/43
+int g1/0/43
 switchport mode access
 desc To ISCSI - Management VLAN (Redundancy)
 switchport access vlan 400
 no shut
 
-int f4/0/44
+int g1/0/44
 switchport mode access
 desc To ISCSI - Storage VLAN (Redundancy)
 switchport access vlan 402
 no shut
 
-int ran f4/0/29-32
+int ran g1/0/29-32
 desc To distribution switch - VLANs 80, 400-402
 switchport mode trunk
 switchport trunk encapsulation dot1q
 switchport trunk allowed vlan 80,400,401,402
 channel-group 22 mode active
 no shut
-
