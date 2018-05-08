@@ -1,0 +1,29 @@
+conf t
+ip default-gateway 172.31.80.1
+! for now we're using vlan 80, but will update to vlan 500 mgmt later
+interface vlan 500
+ip address 10.5.0.1 255.255.255.0
+hostname nti460
+ip domain-name nti460.com
+crypto key generate rsa modulus 1024
+switchport mode access
+line vty 0 4
+! only allow ssh access (no telnet!)
+transport input ssh
+! ensure that user authentication database is only on this multilayer switch
+login local
+! create an ssh password
+! please substitute with the password after "7"
+password 7 
+line console 0
+logging synchronous
+! ensure that user authentication database is only on this multilayer switch
+login local
+! create a secret password
+! please substitute with the secret password after "5"
+username cisco secret 5 
+! only show encrypted passwords in `show run`
+service password-encryption
+end
+! verify ssh access:
+show ip ssh
