@@ -13,6 +13,9 @@ name nti460internal
 vlan 402
 name nti460storage
 
+! TODO: remove all vlan ip interfaces except 80 for now as the gateway is moving
+! to the access switch
+
 int vlan 80
 ip addr 172.31.80.25 255.255.255.0
 no shut
@@ -34,6 +37,7 @@ desc Outside access
 switchport mode access
 switchport access vlan 80
 no shut
+
 
 int ran f4/0/29-32
 desc To access switch - VLANs 80, 400-402

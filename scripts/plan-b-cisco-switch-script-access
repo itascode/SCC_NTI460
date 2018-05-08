@@ -195,6 +195,9 @@ no shut
 ! PORT CHANNEL
 ! Set to trunk to distribution switch
 
+! TODO: Add these to sub interfaces to increase the bandwith for the ports
+! channel
+
 int ran g1/0/13-16
 desc To distribution switch - VLANs 80, 400-402
 ! configure automdix to reduce potential error
