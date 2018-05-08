@@ -197,11 +197,9 @@ no shut
 
 int ran g1/0/13-16
 desc To distribution switch - VLANs 80, 400-402
-! just in case, ensure switches aren't in trunk mode first
-no switchport mode trunk
 ! configure automdix to reduce potential error
 mdix auto
-switchport trunk encapsulation dot1q
+! Encapsulation is already dot1q so just put it into trunk
 switchport mode trunk
 switchport trunk allowed vlan 80,400,401,402
 channel-group 22 mode active
