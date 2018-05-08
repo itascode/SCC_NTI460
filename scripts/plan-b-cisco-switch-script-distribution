@@ -3,7 +3,7 @@ conf t
 
 ip routing
 
-int ran f4/0/1-48 
+int ran f4/0/1-48
 shut
 
 vlan 400
@@ -37,8 +37,10 @@ no shut
 
 int ran f4/0/29-32
 desc To access switch - VLANs 80, 400-402
-switchport mode trunk
+no switchport mode trunk
 switchport trunk encapsulation dot1q
+mdix auto
+switchport mode trunk
 switchport trunk allowed vlan 80,400,401,402
 channel-group 22 mode active
 no shut
