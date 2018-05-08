@@ -1,0 +1,15 @@
+Student Name: Jonathan Wade
+Status Report # 8
+Date: 5/7/2018
+
+What have you completed since the last report?
+
+I attended the meeting on Saturday where we nailed down our roles on the project and a game plan moving forward. I built a small network in gcloud to start testing the ansible-openstack install while the team gets networking finalized and up an running.
+
+What do you plan to complete by the next report?
+
+I hope to be testing on the on-premise hardware by Wednesday afternoon.
+
+What is getting in your way?
+
+Just trying to figure out how to take the big install in the ansible-openstack docs and make it simpler for our small network/environment.
