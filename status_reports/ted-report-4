@@ -1,0 +1,12 @@
+Student Name: Ted Jensen
+Status Report #4
+Date: 5/9/2018
+
+What have you completed since the last report?
+A "plan C" of sorts for the Cisco switch setup under new guidelines. See documentation section (Can be searched for plan-c if need be) for more information. We also managed to get cabling sorted out for the new topology.
+
+What do you plan to complete by the next report?
+MTU changes and jumbo frame support on the storage VLAN-facing interfaces, in version 2 of the plan C script.
+
+What is getting in your way?
+At the moment, interface configuration needs to be done to test whether or not the current script implementation works on all VLANs. I'm not certain who's heading this one, but it likely won't be me.
