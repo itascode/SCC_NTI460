@@ -1,0 +1,127 @@
+enable
+conf t
+
+! allows us to route between vlans
+ip routing
+
+! give a default route to the default gateway
+ip route 0.0.0.0 0.0.0.0 172.31.80.1
+
+vlan 400
+name nti460management
+vlan 401
+name nti460internal
+vlan 402
+name nti460storage
+
+int vlan 80
+ip addr 172.31.80.25 255.255.255.0
+no shut
+
+int vlan 400
+ip addr 10.4.0.1 255.255.255.0
+no shut
+
+int vlan 401
+ip addr 10.4.10.1 255.255.255.0
+no shut
+
+int vlan 402
+ip addr 10.4.20.1 255.255.255.0
+no shut
+
+! EXTERNAL ACCESS
+
+int g1/0/13
+desc Outside access to Lisanet
+switchport mode access
+switchport access vlan 80
+no shut
+
+! COMPUTE NODES
+
+! NODE 1
+
+int g1/0/1
+desc To compute node 1 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int g1/0/2
+desc To compute node 1 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int g1/0/3
+desc To compute node 1 - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
+
+
+! NODE 2
+
+int g1/0/4
+desc To compute node 2 - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int g1/0/5
+desc To compute node 2 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int g1/0/6
+desc To compute node 2 - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
+
+
+! NODE 3
+
+int g1/0/7
+desc To compute node 3 - Management VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int g1/0/8
+desc To compute node 3 - Internal VLAN
+switchport mode access
+switchport access vlan 401
+no shut
+
+int g1/0/9
+desc To compute node 3 - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
+
+
+! CONTROLLER
+
+int g1/0/10
+desc To controller - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+
+! STORAGE
+
+int g1/0/11
+desc To ISCSI - Management VLAN
+switchport mode access
+switchport access vlan 400
+no shut
+
+int g1/0/12
+desc To ISCSI - Storage VLAN
+switchport mode access
+switchport access vlan 402
+no shut
