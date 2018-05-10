@@ -1,0 +1,36 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 12
+Date: 05-9-18
+
+What have you completed since the last report?
+
+Cabling was redone for the majority of the network, allowing us a physical connection
+for our hosts to communicate on. With this done, we're able to move onto software
+configuration for the network. We're now in the process of setting up IP addresses on
+each of our hosts. We already have the multilayer switch configured with the correct
+VLAN interfaces and configured VLANs for each physical switchport. You're able to
+view the current status of this script by going to http://bit.ly/2wub5CT
+
+What do you plan to complete by the next report?
+
+Our next steps are to work on the hosts' IP configuration and test their connectivity
+by communicating with their respective VLAN association on the network. We will
+also test and ensure that they're not able to communicate on VLANs they don't have
+access to just to ensure that the VLANs are doing their job. This will also help
+with the overall security of our network. After we get our network setup we'll be
+able to finally test our Open Stack configuration and start launching Ansible scripts.
+We may even use Ansible to test that our vlans are working properly 🤔
+
+What is getting in your way?
+
+Change management is a recurring issue in our team for all of us. I am realizing
+there are multiple moments where I'm in the thick of it and don't know what the
+next step is to get the thing to work (which I also believe shouldn't happen, but
+inevitable seems like it does). With the ramble about change management out of the
+way, I think another issue is my technical expertise in using new technologies. I
+am unsure that there's a way to change IP addresses on the actual Xen Servers, which
+is actually very really getting my way). Not being able to do this last night meant
+that I was unable to test the physical cabling we'd setup to see if networking
+from host-to-host actually works. This bogged down progress, but probably won't
+for long since our team is working diligently to get issues like these resolved.
+I am impressed by the amount of hard work we're willing to put into this Practicum.
