@@ -1,0 +1,41 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 14
+Date: 05-11-18
+
+What have you completed since the last report?
+
+After cabling was finished, we still had some necessary IP configuration to do on
+the Xen Servers; we're able to complete this through Xen Center for all the nodes.
+I also went ahead and renamed the nodes for consistency, since they're all named
+differently for some reason. I didn't find the iSCSI or controller interfaces here,
+so I wasn't able to setup the VLANs on those interfaces, but setting up the IP addresses
+on those ports will most likely be a non-issue. I noticed while doing the IP
+configuration that I'd need to know which physical ports corresponded to which logical
+interface on the computer. I did this by simply unplugging the cable from the nodes'
+interface, seeing which interface went from connected on Xen Center, and replugging
+that cable back in to ensure that the connection came back up on the same interface.
+Doing this ensured that I knew which port was supposed to map to each port on the
+switch, so that I knew which IP address would then have to be configured on those ports.
+
+
+What do you plan to complete by the next report?
+
+We've now tested our work for the ability of the hosts to ping the VLANs and received
+some mixed results: while we're able to ping the interface of VLAN 80, we're unable to
+ping the interfaces for the other VLANs (e.g. 400, 401, 402). I am hoping that we'll
+be able to find and discuss the source of this issue and resolve it by our next report. Besides
+this issue, it's like we're stuck until we get this fixed. I think pretty much everything
+is going to rely on a working IP config, and so we'll be putting more effort into
+ensuring that we get this up and running as soon as possible.
+
+What is getting in your way?
+
+After I'd setup the IP configuration on the hosts, I found an issue with VLANs
+and being able to ping them properly from the relevant host subnets. The issue is
+something that is yet to be discovered, but I'm hoping that we'll be able to solve
+it soon. I feel like we're currently at a point in our Practicum where networking
+is the thing  that everyone is going to need to have input on to proceed. Last week
+we ended up running circles around what we needed for our routing/switching configuration
+and I think that has slowed us down a lot. I am hoping that we're able to think more
+about networking in the future with regards to our higher level services so that we're
+able to be more successful.
