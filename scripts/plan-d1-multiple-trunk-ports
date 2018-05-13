@@ -33,7 +33,7 @@ no shut
 int ran g1/0/1-24
 mdix auto
 
-int ran g1/0/1-12
+int ran g1/0/1-10
 shut
 switchport mode trunk
 
@@ -105,12 +105,14 @@ no shut
 
 int g1/0/11
 desc To ISCSI - Management VLAN
-switchport trunk allowed vlan 400
+switchport mode access
+switchport access vlan 400
 no shut
 
 int g1/0/12
 desc To ISCSI - Storage VLAN
-switchport trunk allowed vlan 402
+switchport mode access
+switchport access vlan 402
 no shut
 
 
