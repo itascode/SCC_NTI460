@@ -1,0 +1,19 @@
+Student Name: Yolman Torrez
+Status Report # 11
+Date: 05/09/2018
+
+What have you completed since the last report?
+
+We had struggles with the network. apparently, the Xen nodes are not accepting the 
+NIC configuration. we had the idea that it is a lack of driver, but after a series of test,
+we concluded that all drivers are correctly installed. 
+
+What do you plan to complete by the next report?
+
+I hope we solve the problem with the network to install Open stack and move on with 
+the rest of the configurations
+
+What is getting in your way?
+
+the network problem have taken most of the time and we are still analyzing the problem.
+it is unidentified
