@@ -90,7 +90,7 @@ no shut
 int g1/0/9
 desc Storage VLAN - To iSCSI
 switchport mode access
-switchport access vlan 401
+switchport access vlan 402
 no shut
 
 ! EXTERNAL ACCESS
