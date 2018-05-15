@@ -10,9 +10,15 @@ ip domain-lookup
 ip dns server ! enables dns server on this multilayer switch
 
 ! Add example definitions...
-ip host DOMAIN.COM 10.4.0.2
-ip host DOMAIN.COM 10.4.10.2
-ip host DOMAIN.COM 10.4.20.2
+! ip host DOMAIN.COM 10.4.0.2
+! ip host DOMAIN.COM 10.4.10.2
+! ip host DOMAIN.COM 10.4.20.2
+
+ip host node1 10.4.0.3 10.4.10.3 10.4.20.3
+ip host node2 10.4.0.4 10.4.10.4 10.4.20.4
+ip host node3 10.4.0.5 10.4.10.5 10.4.20.5
+ip host controller 10.4.0.6
+ip host iscsi 10.4.0.7 10.4.20.7
 
 ! give a default route to the default gateway
 ip route 0.0.0.0 0.0.0.0 172.31.80.1
