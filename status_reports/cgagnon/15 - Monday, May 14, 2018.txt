@@ -1,0 +1,36 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 15
+Date: 05-14-18
+
+What have you completed since the last report?
+
+The amount of testing and reconfiguring, then testing again since the last report
+has been truly truly remarkable; we've been working on numerous different methodologies
+to see if we'd be able to get the XenServers to be able to talk to each other. Alas,
+with our testing we haven't yet been successful in getting a ping over any VLAN other
+than VLAN 80. We aren't sure what the potential issues might be, but we've been testing
+numerous different possible solutions to no avail. Since our last report, it's safe
+to say that we've completed a lot of testing with not a lot of results.
+
+
+What do you plan to complete by the next report?
+
+By the next report, we hope to research more about the potential issues we're facing
+with this configuration and what it means for the rest of our Practicum. I don't
+think that our team is going to stop working hard to resolve this issue and move
+forward, so I am looking forward to brainstorming solutions to this issue so we're
+triumphant. It's hard to say that we won't necessarily have anything tangible by
+the next report, but the truth is I do believe it's important that we take the time
+to research what our next steps will be so that we're able to be successful.
+
+
+What is getting in your way?
+
+It has been a long journey and I still fear we have time to go before we're able to
+successfully resolve our issue with pinging hosts on VLANs. Something that I'd
+previously taken for granted and believed would be very simple to fix has gotten me
+to the point where I'm questioning the viability of our Practicum. I believe at this
+time more than ever it is crucial that we're able to think about what our next steps
+will be. This is truly the make or break moment for us, so we can't let this issue
+get in our way! Maybe our problem will be easier to solve if we take a different
+approach, but the important thing is that we take that approach in the first place.
