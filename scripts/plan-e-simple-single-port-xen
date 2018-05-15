@@ -7,7 +7,6 @@ ip routing
 ! DNS Server
 
 ip domain-lookup
-ip name-server 10.4.31.80 ! our own dns server address
 ip dns server ! enables dns server on this multilayer switch
 
 ! Add example definitions...
