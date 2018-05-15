@@ -1,0 +1,102 @@
+enable
+conf t
+
+! allows us to route between vlans
+ip routing
+
+! give a default route to the default gateway
+ip route 0.0.0.0 0.0.0.0 172.31.80.1
+
+vlan 400
+name nti460management
+vlan 401
+name nti460internal
+vlan 402
+name nti460storage
+
+! ensure to setup the default dns servers on xen to this ip
+int vlan 80
+ip addr 172.31.80.25 255.255.255.0
+no shut
+
+int vlan 400
+ip addr 10.4.0.1 255.255.255.0
+no shut
+
+int vlan 401
+ip addr 10.4.10.1 255.255.255.0
+no shut
+
+int vlan 402
+ip addr 10.4.20.1 255.255.255.0
+no shut
+
+! for all compute nodes + controller + iSCSI
+int ran g1/0/5-9
+mdix auto
+mtu 9216
+
+! COMPUTE NODES
+
+int g1/0/3
+desc Management, internal, storage VLANs - To compute node 1
+switchport mode trunk
+switchport trunk allowed vlan 400,401,402
+no shut
+
+int g1/0/4
+desc Management, internal, storage VLANs - To compute node 2
+switchport mode trunk
+switchport trunk allowed vlan 400,401,402
+no shut
+
+int g1/0/5
+desc Management, internal, storage VLANs - To compute node 3
+switchport mode trunk
+switchport trunk allowed vlan 400,401,402
+no shut
+
+int g1/0/6
+desc Management, internal, storage VLANs - To controller
+switchport mode trunk
+switchport trunk allowed vlan 400,401,402
+no shut
+
+int g1/0/7
+desc Management VLAN - To iSCSI
+switchport mode access
+switchport access vlan 400
+no shut
+
+int g1/0/8
+desc Internal VLAN - To iSCSI
+switchport mode access
+switchport access vlan 401
+no shut
+
+int g1/0/9
+desc Storage VLAN - To iSCSI
+switchport mode access
+switchport access vlan 401
+no shut
+
+! EXTERNAL ACCESS
+
+int g1/0/1
+desc Outside access to Lisanet
+switchport mode access
+switchport access vlan 80
+no shut
+
+
+! FAILSAFES
+
+int ran g1/0/20-24
+desc Failsafes
+switchport mode access
+switchport access vlan 80
+no shut
+
+end
+
+wr
