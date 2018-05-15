@@ -4,8 +4,21 @@ conf t
 ! allows us to route between vlans
 ip routing
 
+! DNS Server
+
+ip domain-lookup
+ip name-server 10.4.31.80 ! our own dns server address
+ip dns server ! enables dns server on this multilayer switch
+
+! Add example definitions...
+ip host DOMAIN.COM 10.4.0.2
+ip host DOMAIN.COM 10.4.10.2
+ip host DOMAIN.COM 10.4.20.2
+
 ! give a default route to the default gateway
 ip route 0.0.0.0 0.0.0.0 172.31.80.1
+
+
 
 vlan 400
 name nti460management
