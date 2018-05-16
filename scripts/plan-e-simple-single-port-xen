@@ -4,15 +4,13 @@ conf t
 ! allows us to route between vlans
 ip routing
 
-! DNS Server
+! give a default route to the default gateway
+ip route 0.0.0.0 0.0.0.0 172.31.80.1
 
-ip domain-lookup
-ip dns server ! enables dns server on this multilayer switch
+! DNS
 
-! Add example definitions...
-! ip host DOMAIN.COM 10.4.0.2
-! ip host DOMAIN.COM 10.4.10.2
-! ip host DOMAIN.COM 10.4.20.2
+ip domain-lookup ! enable domain lookups
+ip dns server ! enables dns server functionality
 
 ip host node1 10.4.0.3 10.4.10.3 10.4.20.3
 ip host node2 10.4.0.4 10.4.10.4 10.4.20.4
@@ -20,10 +18,8 @@ ip host node3 10.4.0.5 10.4.10.5 10.4.20.5
 ip host controller 10.4.0.6
 ip host iscsi 10.4.0.7 10.4.20.7
 
-! give a default route to the default gateway
-ip route 0.0.0.0 0.0.0.0 172.31.80.1
 
-
+! VLANs
 
 vlan 400
 name nti460management
@@ -32,7 +28,6 @@ name nti460internal
 vlan 402
 name nti460storage
 
-! ensure to setup the default dns servers on xen to this ip
 int vlan 80
 ip addr 172.31.80.25 255.255.255.0
 no shut
@@ -53,6 +48,7 @@ no shut
 int ran g1/0/5-9
 mdix auto
 mtu 9216
+
 
 ! COMPUTE NODES
 
@@ -107,7 +103,7 @@ switchport access vlan 80
 no shut
 
 
-! FAILSAFES
+! FAILSAFES for Lisanet Access
 
 int ran g1/0/20-24
 desc Failsafes
