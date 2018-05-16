@@ -1,0 +1,65 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 16
+Date: 05-16-18
+
+What have you completed since the last report?
+
+Our last report had us working on fixing the networking issue that plagued our
+progress; I'm happy to report that we're able to solve that issue via mainly what
+I believe to be brute force (though we did get some very useful pieces of information
+from both our client and our instructor which I am in no way downplaying). But
+definitely the amount of time that we'd spent on fixing this issue combined with
+our perseverance shows that we're capable of completing this project. I think it's
+actually quite amazing since we're under the impression that we'd be receiving hardware
+which would work right off the bat and that the installation procedures wouldn't be
+as confusing or murky as they actually were, yet we're able to persevere.
+
+I also spent time working with Ted on DNS stuff. Within 10 minutes we had a rough
+draft of some of the code we'd need to successfully do a map of a hostname to an IP
+address. We came up to a conclusion though which will probably require our client
+actually configuring some stuff for us to get it to work for Lisanet. The multilayer
+switch is more than capable enough to setup the DNS server, and our requests will
+work for at least our traffic emanating from our Xen server  currently. I'll
+explain more in the below sections.
+
+
+What do you plan to complete by the next report?
+
+I'm heading out on vacation for six days, but that doesn't mean I won't be doing
+what I'm able to contribute to our Practicum. I am happy that the networking is
+fundamentally working (that's what Ted and I set out to help with in the first place),
+but I'm hoping that there'll be more that we're able to do over time. I think one
+of the first things that we need to do is simply install configuration on top of
+our working network configuration and hope that our networking is encapsulated. This
+will require us to understand the dependencies of our OpenStack/Ansible installation
+and thus give us an answer as to whether we're able to proceed without worrying about
+networking anymore or not. Also on a higher level than we've been working on will
+be to implement DNS; I believe one of the next steps with regard to that will be to
+connect with our client to understand what the procedure might look like for users
+on Lisanet that want to connect to our Xen stack, and then thinking about how we're
+able to implement that some more.
+
+
+What is getting in your way?
+
+Our main issue is probably still change management and really just delegation of work /
+planning when things are going to get completed. I feel like this Practicum is sort
+of like a race for all of us to see what we're able to do within what's now a short
+period of time (a month for on-prem and cloud project). One of the main issues I
+believe has been the immersion into using hardware which doesn't have any sort of
+quality assurance to help us implement the configuration of new technology; I think
+this has been a major sore point as we got stuck on networking for awhile. But now
+that we're progressing we simply have a time crunch that we'll need to sort out in
+order for us to reach our goals for this Practicum.
+
+With that in mind, as the people responsible for the networking of these machines,
+we need to focus more on our implementation of  networking technologies. DNS is going
+to be a really nice feature if we can get it implemented, but it's going to require
+department-wide effort to execute. Mainly, we have DNS compatibility within our network
+(say I ping a host name from a xen server or the controller, it's going to work
+because we'll have a DNS server setup and host to IP mapping which will help us get
+that IP address to the host), but not outside of our network in Lisanet. As far as
+I'm aware of we'll need to have an entry that points to our DNS server as a name
+server so that we're able to facilitate those mappings from Lisanet. Without those
+mappings being resolved, we'll be unable to support any DNS requests except within
+our own internal network.
