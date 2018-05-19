@@ -1,0 +1,50 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 17
+Date: 05-18-18
+
+What have you completed since the last report?
+
+I've been on a small vacation since the last report, but that hasn't completely
+stopped me from keeping in touch with the group and via Slack and accomplishing
+some amount of work for our group cloud project. I'm actually really looking
+forward to the cloud part of our Practicum; I love coding and hope that I get the
+chance to write some truly useful scripts. I've just installed Ansible on my mac
+using the easy 'brew install ansible' command. After posting about Ansible in the
+discussion I was actually a bit afraid of being able to install it on my mac. But
+After reading the installation guide that was posted on Canvas, I noticed that OS X
+actually is supported, which makes it easy to be able to install it without needing
+to dual-boot or use VMs. I also thought it was cool that Ansible can be run directly
+from source - no compiling necessary!
+
+
+What do you plan to complete by the next report?
+
+Monday will bring a new understanding to me in the form of Ansible: I plan to look
+into installation of it more (probably using Linux) and from here seek to make progress
+on our cloud project. My goal is to (hopefully) be able to configure Ansible on my
+localhost from the point where it's able to spin up instances remotely in Google Cloud.
+I am hoping to also be able to research it more so that I know about the different
+options which are also shown in the configuration guide for the project inside and out.
+That's my goal. Not saying I'll be able to reach it by the next report, but I'm
+definitely hoping to be able to understand this part of using Ansible well by the
+end of this Practicum.
+
+
+What is getting in your way?
+
+I guess what I'd say is that Operating Systems and interfacing with Ansible would be
+what are getting in my way right now; coming up with an efficient way to test my deployment
+of Ansible on a machine as close to our production servers in configuration would be
+my best bet.
+
+I spent some time reading about the configuration of Ansible, which after some
+further research pointed me to a website which contains more of a specific explanation
+of what to use for OS X. On Linux, everything seems to be more "out-of-the-box,"
+whereas on OS X there seems to be more of a "take-everything-out-of-the-box" approach.
+Not saying this is a bad thing (actually being forced to look at these files on a mac
+the first time is probably a good thing), but it might not be what I actually want to
+do. That being said, I did take a look at the options for a config file, to which I
+knew I'd probably be needing to Google stuff when I realized I didn't know how to run
+Ansible in "ad-hoc" mode from the terminal. So... I'm thinking about using VMs or
+another system to be able to do my Ansible development on (Raspberry Pi?!) we'll
+see where it goes.
