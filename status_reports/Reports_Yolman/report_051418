@@ -1,0 +1,20 @@
+Student Name: Yolman Torrez
+Status Report # 13
+Date: 05/14/2018
+
+What have you completed since the last report?
+
+we hada a problem with the connection of the node to the network. VLANs were created,
+but we haven't resolved the connectivity issues. Our supervisor came to help us. however,
+most of the tests and troubleshooting wasn't successful.
+
+What do you plan to complete by the next report?
+
+I hope to give it another shot to the solution of the network issues. I plan to use a trunk link
+to the only port that is functional. if it will not work; we might present another solution to our customer
+using different software
+
+What is getting in your way?
+
+the  connectivity have become a real pain, and I am still thinking that there must be a problem
+with the NIC 
