@@ -1,0 +1,38 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 18
+Date: 05-21-18
+
+What have you completed since the last report?
+
+I have been planning on implementing Ansible more but have been unable to find the
+network connection and/or time to do so. What I have been doing is learning more about
+Continuous Integration/Continuous Delivery in my Linux classes, which has helped me
+to better understand the process behind building a pipeline for software development. I
+believe that these skills are actually highly transferrable to a project such as the
+Practicum because I can see us needing to package our build software and test it. I
+have been able to come up with some ideas for things I could see myself doing in the
+last couple weeks of this quarter.
+
+What do you plan to complete by the next report?
+
+If I have time, I'd like to take what I've learned in my Linux classes and apply it to this
+Practicum by packaging our code and loading it in from a repository. In Linux we've been
+playing around with creating repo servers, and after learning about the CI/CD build process,
+I can see something like an RPM being a great fit for our Ansible/Open Stack integration.
+That being said, it may not be done in time to actually deploy on servers at the school, but
+I believe that doesn't make it any less useful for the experience of writing the code
+in addition to the documentation it would have the ability to generate. For now I will
+focus on getting Ansible up and running; for the future, I'd like to dream big though.
+
+What is getting in your way?
+
+I woke up at four AM today to catch a flight home from San Francisco. I'm usually asleep
+an hour ago, but I'm still riding the wave of MakerFaire. Tomorrow is dedicated as a work-
+day in which I plan to get things done. There were all sorts of things that got in
+my way today which prevented me from getting the project worked on (mainly I'd say it was
+my ability to procrastinate, but more so it's been just an experience being able to see my
+mom again today and catch up/fix stuff). Lol. I ended up reading some on the plane ride over
+since I didn't have a network connection (which sparked my interest more in the packaging
+of our code and adding it to a repo). And in general it's been an Ansible-less weekend. The
+way I feel about it though is that it's okay. I've planned time out this week to work on
+the cloud and on-prem projects, and I feel like I'm ready to go. Bring on the code!
