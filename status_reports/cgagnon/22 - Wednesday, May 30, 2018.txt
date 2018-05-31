@@ -1,0 +1,40 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 22
+Date: 05-30-18
+
+What have you completed since the last report?
+
+Ansible is fun. After many hours of intense concentration and dedication to fix the
+recurring issues that I was facing, I was able to get Ansible to start running scripts
+in GCE. Actually, installing Ansible was really easy: a simple pip command or two and
+copying an explicit configuration file in (which may not have been required anyways)
+and I was on my way. I wrote some documentation to go with what I'd done because I'd
+cobbled together a lot of the information and used it in different ways. I wrote the
+documentation in an application I'd previously downloaded called Quiver, and I'm super
+happy I tested this out: the application is an amazing way to keep your code snippets,
+and learning how to use it for creating documentation has really opened up my eyes to
+its potential.
+
+What do you plan to complete by the next report?
+
+I actually feel like the documentation is useful enough to be able to be put online,
+and I plan on doing so when I get the chance to, but this isn't what I plan on doing
+for the next report. I'm actually hoping to be able to take the documentation I wrote
+and build onto it with another part for JSON and list parsing. I feel like learning
+these topics were super hard because there was no "one place" to get the information
+required: over time things change, and the roles required to add to the GCE service
+account as well as the actual code to interface with the JSON result of spinning up
+an instance are definitely things that I had to look high and low for; having
+documentation will definitely speed up our team's ability to be able to test their
+code without running into the obstacle of setting up their environment. I hope some
+people on the Internet think so too 😼 
+
+What is getting in your way?
+
+I worked mainly on getting the instance to startup; it's amazing how much work it takes
+to do what seems to be like such a simple thing. I am excited to work on the project
+further and take what I'm learning about Ansible to the next level: working with David's
+videos on the subject I feel is what I need to break our playbooks out to that level of
+sophistication. I am hoping that I'll be able to get stuck again before we meet so that
+I'm able to ask questions about how to do what we need to do. Then time management
+would be getting in my way again 😉
