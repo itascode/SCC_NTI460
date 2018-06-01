@@ -1,0 +1,49 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 23
+Date: 06-1-18
+
+What have you completed since the last report?
+
+I actually staggered some of my reported progress since I wasn't sure if I'd be
+able to get work done between my last progress report and today or not (hint: I
+didn't). Where I am today though is with the ability to successfully spin up LDAP
+servers via GCloud, which was separate from just having the ability to spin up a
+server in GCloud. I wanted to be able to do it because there's actually a decent
+amount of overlap between my Linux class and what I'm doing in this practicum. I'm
+actually happy that I was able to get it, because it ended up being a really tough
+thing to parse... but I finally figured it out. Being able to do this work actually
+netted me a slight amount of extra credit in my linux class, and helped me get over
+probably the biggest hump in terms of cloud stuff that I'll be facing in this class
+(at least for the assigned part of the project [LDAP] I did).
+
+I know there's something I'm missing with it that I can't really remember right now,
+but I'm sure that when the issue crops up I'll be able to solve it (oh, I just remembered. lol)
+
+
+What do you plan to complete by the next report?
+
+The next step I see taking is having the ability to spin up another instance in
+the same playbook so I'll be able to successfully have multiple clients being
+created in the span of one playbook. Then I'd like to be able to learn how to do
+conditionals in Ansible so that I'd be able to spin up an arbitrary number of clients
+using that same single playbook. The hope is to also get together with Yolmant to
+discuss what we're going to be doing together; who's going to work on spinning up
+multiple hosts, that sort of thing. Also passing IP addresses between the hosts
+and such. For now I'm just thinking a simple sed change for the startup-scripts we
+plan on passing in via the working directory (Ansible will do this on a higher level).
+The thing I forgot but need to do is to be able to remove the startup-script metadata
+from the running instances, since that's going to be something that runs every time
+the instances start up (not what we want).
+
+
+What is getting in your way?
+
+We're getting to the end of the quarter and we're running out of time to get
+everything completed. I'm really into this cloud project because I think it's a
+great way for us to be able to work together and not have to worry about bad configurations
+or issues that crop up which can't be easily reverted. I like the idea that we're
+able to manage our infrastructure with code. I am hoping that I'm able to talk to
+my sub-team member Yolmant to discuss who's going to do what, and from there be able
+to bring some deliverables to our team. I don't know what's going to get in our
+way in terms of code, but I'm hoping that we'll be able to get through those issues
+when we get to them.
