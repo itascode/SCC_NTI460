@@ -1,0 +1,38 @@
+#!/bin/bash
+
+######################################################
+### This will be used to build the Ansible script. ###
+######################################################
+
+yum install -y nss-pam-ldapd nscd wget nfs-utils
+
+#LDAP config stuff.
+
+authconfig --enableldap --enableldapauth --ldapserver=ldap://10.142.0.2/ --ldapbasedn="dc=capstone,dc=local" --updateall 
+
+#echo -e '\n
+#URI ldap://10.142.0.2
+#base dc=capstone,dc=local' >> /etc/openldap/ldap.conf
+
+systemctl restart nscd
+
+#NFS stuff starts here.
+
+systemctl enable rpcbind
+systemctl enable nfs-server
+systemctl enable nfs-lock
+systemctl enable nfs-idmap
+systemctl start rpcbind
+systemctl start nfs-server
+systemctl start nfs-lock
+systemctl start nfs-idmap
+
+#NFS LDAP integration begins here.
+wget ADDRESSTONFSCONFIGRAW
+
+crontab -l 2>/dev/null; echo "* * * * * /bin/sh /NFSCONFIG" | crontab -
+
+exportfs -a
+
+systemctl restart nfs-server
+
