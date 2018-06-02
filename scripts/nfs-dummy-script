@@ -8,11 +8,7 @@ yum install -y nss-pam-ldapd nscd wget nfs-utils
 
 #LDAP config stuff.
 
-authconfig --enableldap --enableldapauth --ldapserver=ldap://10.142.0.2/ --ldapbasedn="dc=capstone,dc=local" --updateall 
-
-#echo -e '\n
-#URI ldap://10.142.0.2
-#base dc=capstone,dc=local' >> /etc/openldap/ldap.conf
+authconfig --enableldap --enableldapauth --ldapserver=ldap://LDAPIP --ldapbasedn="DCDC" --updateall 
 
 systemctl restart nscd
 
