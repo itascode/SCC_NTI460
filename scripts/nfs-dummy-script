@@ -26,6 +26,8 @@ systemctl start nfs-idmap
 #NFS LDAP integration begins here.
 wget ADDRESSTONFSCONFIGRAW
 
+#NFSCONFIG will be run as an individual task, probably.
+
 crontab -l 2>/dev/null; echo "* * * * * /bin/sh /NFSCONFIG" | crontab -
 
 exportfs -a
