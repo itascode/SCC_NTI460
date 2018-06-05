@@ -1,0 +1,28 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 24
+Date: 06-4-18
+
+What have you completed since the last report?
+
+Since our last report I've created specifications of scope for what each team
+member will be responsible for completing in the span of the presentation. After
+we met on Saturday, I also feel like we got a much better footing on what some of
+the potential sore spots or trouble points would be throughout the rest of our
+Practicum using Ansible. With those resolved I feel like we have a higher chance
+to succeed with our individual components and to provide a great presentation.
+
+
+What do you plan to complete by the next report?
+
+I'd like to start working more on the presentation and figuring out the input/output
+of variables from one playbook to another. I'd also like to get an update about
+where we're at with the on-prem part of the project and see if/how I'm able to
+contribute to that aspect of the Practicum.
+
+What is getting in your way?
+
+Right now, it's gotta be my other Linux classes, which really just boils down to
+the time I currently have to dedicate to the Practicum. Luckily I spent a decent
+amount of time setting things up for this part of the project, so I think we'll
+be good in getting it done on time; but this week I don't see myself getting too
+much done until Thursday. Then I want to get a lot done ✔️
