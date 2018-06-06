@@ -1,0 +1,20 @@
+Student Name: Yolman Torrez
+Status Report # 12
+Date: 05/11/2018
+
+What have you completed since the last report?
+
+We are not having traffic on the rest of the NICs on the nodes. We were not able to identified the
+problem yet. We thought that it might be a hardware problem. however, we tested the NIC cards and they 
+are working.
+
+What do you plan to complete by the next report?
+
+There is a theory that I shared with my team. that the XenCenter is conflicting with the IOS of each node
+and I might proceed to isolate each node and reinstall the IOS and configure them once again. I hope to have good 
+result for the next report
+
+What is getting in your way?
+
+there is not to much information about our problem. however, I keep researching and I expect to have a entire
+plan to proceed on monday.

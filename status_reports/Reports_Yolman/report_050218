@@ -1,0 +1,18 @@
+Student Name: Yolman Torrez
+Status Report # 8
+Date: 05/03/2018
+
+What have you completed since the last report?
+
+Due to a crash of the iscsi server, caused by me, I had to reinstalled the OS on the server and 
+configure the target once again. the serve down was caused by a improperly mount of the hard disk partition.
+After I recovered the server I reconfigure the initiator on the node 1 and it works properly
+
+What do you plan to complete by the next report?
+
+For the next report, I expect to have all node configure and be able to access the storage on the target. I also expect 
+to start working on the network ( creating the subnets and configuring the VLANs)
+
+What is getting in your way?
+
+for now, nothing is getting on my way

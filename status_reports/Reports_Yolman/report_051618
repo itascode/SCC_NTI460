@@ -1,0 +1,19 @@
+Student Name: Yolman Torrez
+Status Report # 14
+Date: 05/16/2018
+
+What have you completed since the last report?
+
+Today, I successfully configure the nodes into the network. All VLAN are being trunked
+from the switch to the port 0 of all nodes and XenServer. I also found out that the extra NIC
+is not compatible to the verion 7.4 of Xen, so that they will not be used for those boxes with Xen installed
+
+What do you plan to complete by the next report?
+
+For the next report, I hope that my team starts to install the ansible and Open Stack on the controller. I also expect
+that the target will be reconfigure to the parameters of the network.
+
+What is getting in your way?
+
+there is not obstacle now. So I hope my team will have all working together. I will be there to each process
+to supervise and assist with any help.

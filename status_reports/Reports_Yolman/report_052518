@@ -1,0 +1,17 @@
+Student Name: Yolman Torrez
+Status Report #18
+Date: 05/25/2018
+
+What have you completed since the last report?
+
+Today, I reconfigure the ISCSI. apparently there were some misconfiguration and the final set has been done through
+the xen-center. I also reconfigure the trunk to get full access from the Cisco Lab. aparently the management conflicted with the external
+VLAN and it could not reach the lab network
+
+What do you plan to complete by the next report?
+
+I hope that this weekend jonnathan install successfully OSC and statr with the cloud project
+
+What is getting in your way?
+
+the requirements has been delivered. however, there are some researchs that have to be done.

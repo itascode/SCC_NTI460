@@ -1,0 +1,19 @@
+Student Name: Yolman Torrez
+Status Report #19
+Date: 05/28/2018
+
+What have you completed since the last report?
+
+the Open Stack installation has failed. we have have planned to install OSC with ansible (acording to jonnathan a little more complicated)
+if this failed, we must install separately. I prepared some configuration to help my team.
+
+What do you plan to complete by the next report?
+
+hopefully, we will install OSC and start testing it. I will also start with the cloud project creating an instance that will be
+work as my localhost
+
+What is getting in your way?
+
+Due to the available time that my team and I have, we have decided to meet all together on Saturday to proceed with 
+the installation also we will talk about the cloud project and how are we going to distribute the work. So next report we will generated on monday, 
+June 2nd.
