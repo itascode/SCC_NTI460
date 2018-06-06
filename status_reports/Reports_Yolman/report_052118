@@ -1,0 +1,18 @@
+Student Name: Yolman Torrez
+Status Report #16
+Date: 05/21/2018
+
+What have you completed since the last report?
+
+Today, I reconfigure the switch to have a better orientation of which port are connected to which box. I isolate the 
+VLAN 80 because it will be our access to the outside and there are devices that will not be connected to it. until we figure 
+put how to have internet connectivity or outside connection.
+
+What do you plan to complete by the next report?
+
+I am expecting to configure the VLAN 80 directly with the DNS on the server room to
+obtain access to the outside
+
+What is getting in your way?
+
+I still waiting for some test on the stage of the Open Stack and recieve the requirements for the cloud project
