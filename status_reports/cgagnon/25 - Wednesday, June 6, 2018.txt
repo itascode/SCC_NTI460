@@ -1,0 +1,41 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 25
+Date: 06-6-18
+
+What have you completed since the last report?
+
+Not a lot of progress on my end since the last report, but I can see what I initially
+contributed for the cloud portion of the Practicum is useful. Everything up to getting
+the IP address of the instance that was created is being reused, with the only difference
+being the script to start the LDAP server changing. I don't really care what code is
+used in startup scripts as long as it works though. There hasn't been any testing
+done on the cloud code which has been pushed from everyone in the group, and that
+could present an issue if it doesn't work.
+
+
+What do you plan to complete by the next report?
+
+We'll still need to update our startup scripts to not run after the first startup,
+but this is really just a minor change for our scripts. I am also looking forward
+to potentially working with Carlos tomorrow to guide him through the creation of
+instances using our Ansible playbooks. We may also have a chance to test Yolmant's
+code and see if it's performing as expected. Since Carlos and Fadil were assigned 
+to work on the client part, that's what I'll be helping them with if they have any
+questions. Since Yolmant said he did the client part, we'll be testing to see if
+there are errors with his code, and I'll be asking Carlos and Fadil if they want to
+write their own version or just use Yolmant's.
+
+
+What is getting in your way?
+
+I'm frustrated that we delegated positions and yet again we have one person that
+just decided to overreach his scope of work and tell everyone "it's finished" before
+we've gotten a chance to test what it's actually doing. I feel like this is reckless
+and not a great way for the group to get things done because it demotivates the rest
+of the team to work on what they're assigned. I think this will get into everyone's
+way because it will also make it harder for us to focus in on specific issues; we broke
+our assignment into three groups to ensure that we're able to work on small components
+which would later be merged together. If we have any issues with the composed code
+we'll need to focus on all three components merged into one, rather than the individual
+components which each subgroup was assigned. Let's just say I hope there are no issues
+with testing.
