@@ -1,0 +1,40 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 25
+Date: 06-6-18
+
+What have you completed since the last report?
+
+Since the last report I've been helping coordinate when the team will be ready to
+meet on Saturday. Other than that I haven't been able to accomplish as much as I'd
+have liked, but I also feel like we're getting to a point in the quarter where there
+is not necessarily a lot more that needs to be done besides some documentation and
+getting ready for our final presentation. I reached out to work with Carlos, but
+was unable to schedule a time to meet with him for working on the client code for
+the cloud portion of the Practicum.
+
+
+What do you plan to complete by the next report?
+
+In terms of testing, I still haven't had the chance to update startup scripts to
+work with the metadata passed into GCE, but I am hoping to be able to do this
+tonight or tomorrow. This is actually something that will benefit both the work I'm
+doing in my Linux classes as well as the work I'm doing for the Practicum. I'm
+definitely pleasantly surprised by the crossover that we're able to get out of each
+class and that's helped my effectiveness and productivity overall. I will also
+help coordinate with the team the different aspects for the presentation of the
+Practicum as well as helping in whatever way I can to complete the On-Prem portion
+on Saturday.
+
+
+What is getting in your way?
+
+Being able to meet before our presentation is something I can clearly see getting
+in my way. There'll probably be a little bit of catching up for all of us, and
+cramming this into the last week of school might end up being harder than we expect.
+There are commitments that I have starting in the summer which I need to begin
+working on now and that's going to potentially interfere with the amount of work I'm
+able to put into the Practicum. That's why I took some time this week to ensure
+that I got the majority of that work done so that I'd be able to focus more on the
+Practicum and less on outside commitments. With the June 15th deadline looming I am
+hoping that we hit success on all fronts of the Practicum, and I'm willing to put in
+the effort to do so within our time constraint.
