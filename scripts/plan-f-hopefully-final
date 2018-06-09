@@ -1,0 +1,50 @@
+enable
+conf t
+
+int g1/0/1
+switchport mode access
+switchport access vlan 80
+desc To Lisanet
+no shut
+
+int ran g1/0/3-6
+switchport mode trunk
+switchport trunk allowed vlan 80,400,401,402
+desc To machines
+no shut
+
+int ran g1/0/7-9,g1/0/19-24
+switchport mode access
+no shut
+
+int g1/0/7
+desc To ISCSI - Vlan 400
+switchport access vlan 400
+
+int g1/0/8
+desc To ISCSI - Vlan 401
+switchport access vlan 401
+
+int g1/0/9
+desc To ISCSI - Vlan 402
+switchport access vlan 402
+
+int g1/0/20
+desc Fallback port
+switchport access vlan 80
+
+int g1/0/21
+desc Fallback port
+switchport access vlan 80
+
+int g1/0/22
+desc Fallback port
+switchport access vlan 80
+
+int g1/0/23
+desc Fallback port
+switchport access vlan 80
+
+int g1/0/24
+desc Fallback port
+switchport access vlan 80
