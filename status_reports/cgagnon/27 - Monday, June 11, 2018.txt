@@ -1,0 +1,59 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 26
+Date: 06-11-18
+
+What have you completed since the last report?
+
+On Saturday we met to go hopefully install and finalize our On-Prem installation,
+but again we had issues. On one end we're recovering from the power failure, which
+shouldn't have been a big issue but it turned out to be. The configuration which we'd
+spent a lot of time putting in ended up not being saved and this prevented us from
+being able to get up and running with networking again. Since this project is
+based on a foundation of networking if we don't have it then nothing can be stacked
+on top of it. We had some configuration which we could and did apply to the server,
+but we're unable to get the full functionality that we needed back up. The issues
+came from the fact that our code wasn't the full scope of what was input into the
+multilayer switch, and we didn't have the missing piece, since it was never saved.
+We chose to spend our time revisiting the cloud portion of the project and figuring
+out what we're struggling with so that we can ensure that the max amount of people
+are able to contribute to this portion of the Practicum. We discovered issues which
+we didn't previously think of and this will help ensure that we have a better final
+product.
+
+
+What do you plan to complete by the next report?
+
+The next report will be very close to our presentation. We still need to have a time
+for everyone to get together and practice before we present, so that we're clear on
+what exactly needs to be presented and how we would like to present it. I am also
+planning on contributing to the presentation and working on doing whatever needs to
+be done to ensure that we have done what we're able to have a deliverable for this
+Practicum. I have given some pointers to help other group members write code, and
+I personally believe this is where our presentation is going to shine. What we
+have may be simple, but it demonstrates that we're able to work as a team and
+at a minimum partially complete the components of this Practicum (fully fulfill the
+cloud requirements). What I like about this is that we haven't had the same typles
+of issues that we had in the On-Prem part of the practicum, so I feel like the
+team morality is somewhat higher for this part of the class.
+
+
+What is getting in your way?
+
+It's unfortunate that we're this far in and still don't have our project done, but
+we have a plan which should allow us at a minimum to have a deliverable for the cloud
+portion. We've gone through many steps of troubleshooting and making incremental
+progress towards our goals. We haven't been able to work as well as a team as I'd
+like, but that most likely won't get in the way of us completing our objectives.
+I truly believe that we've had setbacks on this front because of our communication
+as a team and that's taken a toll on the progress we're able to make. I don't like
+being in a position where I feel like my time is being wasted, but I think we've
+all been in this position throughout the duration of this Practicum. Whether it was
+dealing with software inconsistencies, hardware incompatibility, or just change
+management, we've struggled on all fronts to get our project up and running. I am
+at least happy with the fact that we're all determined to get this project completed.
+I have never seen or expected my classmates and I to show up almost every Saturday
+for an entire quarter, even when the technology side is a struggle. At this point
+coordinating is key and that's where I'm struggling. Maybe this is something that
+ends up not needing to be my responsibility, but I want to do it because everyone
+also seems to want to contribute, and I believe this adds more value to the team
+as a whole.
