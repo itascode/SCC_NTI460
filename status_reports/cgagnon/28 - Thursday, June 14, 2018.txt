@@ -1,0 +1,46 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 27
+Date: 06-14-18
+
+What have you completed since the last report?
+
+We have completely torn down and rebuilt pretty much the entirety of our On-Premises
+portion of this Practicum. I actually was so intently focused on the technical aspects
+of this part of the project that I totally forgot to write my last status update!
+I'm happy because even though our last attempt at getting the On-Prem install of our
+hasn't led to a functional openstack implementation, I have felt the euphoria of
+being able to get past our previous bugs/issues. I feel like I've been able to learn
+more in the past day than I have in the previous portions of our Practicum, and
+that's a great thing! I solved multiple software issues that I'd caused previously
+and quickly. I thought around issues to find potential solutions which didn't rely
+on knowledge I didn't currently have. We came up with good ways of dealing with the
+issues that we're facing at this time and because of this we'll have more to present
+tomorrow.
+
+
+What do you plan to complete by the next report?
+
+Despite the fact that we're this far into the Practicum there's still a significant
+amount of work to do. I feel like it's necessary that I spend time updating and
+testing the code that everyone has written for the Ansible/cloud portion of this
+Practicum because I feel like it's the right thing to do. When I wrote a baseline
+script to interface with GCE using Ansible, I thought some people might use it, and
+now we're at a point where anybody that's written Ansible code in our team has used
+it. I'm excited and I feel like we deserve to do the integration required as we are
+all at different levels of progress in our team. So I'm hoping to be able to do the
+integration so that we have an Ansible script we all contributed to and has the
+capabilities we want from our code.
+
+What is getting in your way?
+
+Time and coordination. There are people in our group whom I've been unable to reach
+for contact which is hurting the ability of our team to make its best presentation
+possible. We now have less than a day to get our presentation completed and I feel
+like we're in the dark about what needs to be done. Honestly I'm hoping that we
+all get a chance to meet to talk about the presentation before we do it, but at
+this point I'm not holding much hope. I feel bad about this aspect of the project.
+I have reached out to those who're unwilling to participate at this time and there's
+nothing else I can do to make them come in and be part of the team. I wish that
+I didn't feel responsible for this but part of me does. I'm okay with letting it
+go to do the best job I can on this cusp of the Practicum; it's the only thing I'm
+able to do.
