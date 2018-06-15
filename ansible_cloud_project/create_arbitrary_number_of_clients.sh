@@ -67,7 +67,7 @@ echo "---
        " >> $filepath
 
 function create_clients {
- echo "- name: Launch Client
+ echo " - name: Launch Client
    gce:
       instance_names: client$1
       zone: \"{{ zone }}\"
