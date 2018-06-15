@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Build a YAML configuration file for Ansible arbitrary num of clients
+filepath="~/ansible.yaml"
 
 echo "---
  - name: Create instance(s)
@@ -62,7 +63,8 @@ echo "---
        dest: /etc/ansible/hosts
        insertafter: '^\[nfs-server\]'
        line: \"{{ gce.instance_data[0].private_ip }}\"
-       state: present" >> ~/ansible_configuration
+       state: present
+       " >> $filepath
 
 function create_clients {
  echo "- name: Launch Client
@@ -86,7 +88,7 @@ function create_clients {
      dest: /etc/ansible/hosts
      insertafter: '^\[clients\]'
      line: \"{{ gce.instance_data[0].private_ip }}\"
-     state: present" >> ~/ansible_configuration
+     state: present" >> $filepath
 
 }
 
