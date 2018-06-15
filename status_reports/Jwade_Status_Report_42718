@@ -1,0 +1,15 @@
+Student Name: Jonathan Wade
+Status Report # 6
+Date: 4/27/2018
+
+What have you completed since the last report?
+
+More research on Ansible-Openstack install. Working on configuring YAML config files for Openstack isntallation. Installed ansible and cloned the ansible-openstack github repo to the CentOS 7 vm on the mgmt server. Testing installation.
+
+What do you plan to complete by the next report?
+
+Get openstack installed after finalizing network configuration.
+
+What is getting in your way?
+
+Working hard to simplify the installation for our environment, but make it still functional.
