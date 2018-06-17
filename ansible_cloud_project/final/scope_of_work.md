@@ -10,9 +10,9 @@ Saturday, June 16, 2018**
 <!-- toc -->
 - [1. - Objective](#1-objective)
 - [2. - Generating the Scope](#2-generating-the-scope)
-  * [2.1 - Cloud Infrastructure Diagram](https://github.com/codycodes/SCC_NTI460/blob/master/ansible_cloud_project/final/ldap_nfs_cloud_diagram.png)
-  * [2.2 - Technical Components of the Project](#21-technical-components-of-the-project)
-  * [2.3 - Working Within Constraints of Practicum](#22-working-within-constraints-of-practicum)
+  * [2.1 - Cloud Infrastructure Diagram](##21-cloud-infrastructure-diagram)
+  * [2.2 - Technical Components of the Project](#22-technical-components-of-the-project)
+  * [2.3 - Working Within Constraints of Practicum](#23-working-within-constraints-of-practicum)
 - [3. Delegation of Work](#3-delegation-of-work)
 - [4. Connection to learning Objectives](#4-connection-to-learning-objectives)
 
