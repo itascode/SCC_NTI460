@@ -1,11 +1,10 @@
-# NTI-460 Practicum
-## Cloud Project
+# NTI-460 Practicum - Cloud Project
 
-Carlos Aguilar | Cody Gagnon | Fadil Jemal
-Jonathan Wade | Ted Jensen | Yolmant Torres
+**Carlos Aguilar | Cody Gagnon | Fadil Jemal
+Jonathan Wade | Ted Jensen | Yolmant Torres**
 
-Michael J. Fraser |
-Saturday, June 16, 2018
+**Michael J. Fraser |
+Saturday, June 16, 2018**
 
 ### Table of Contents
 <!-- toc -->
