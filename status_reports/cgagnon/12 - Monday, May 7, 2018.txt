@@ -1,0 +1,36 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 12
+Date: 05-7-18
+
+What have you completed since the last report?
+
+We've met, eaten pizza, and discussed our Practicum as a team. I feel like we
+are doing better because of our communication as a team and this supports our ability
+to complete our objectives. We mainly focused on what our current bottleneck is,
+and as a result we're focusing now more than ever on our fundamental task: networking.
+Ted and I sat down and reworked a script for what we thought we'd be able to complete
+for the networking aspect; this was a method which would've allowed us to use many less
+cables, but unfortunately, didn't work. But we did learn a lot about how we would be
+able to setup networking, and will most likely only need to make a few small changes for
+the code to perform successfully!
+
+
+What do you plan to complete by the next report?
+
+The next status report will hopefully contain information about our success with the
+networking aspect of the practicum; we are hoping to get cables tomorrow in addition to having
+both our access and distribution equipment routing and switching properly. This will involve
+a large effort on everyone's behalf to come together and deliver what we're capable of. If this
+doesn't happen, we know that we'll at least have the configuration set on the equipment, but may
+not be able to test if it is properly working or not.
+
+
+What is getting in your way?
+
+We're having issues with the networking bottleneck, and this is resulting in less features/performance
+than we'd previously expected. We may not be able to do redundancy due to the lack of available interfaces on
+the compute nodes, and in addition we may be unable to properly route between VLANs, though this is probably
+an over-exaggeration. We're really just neutral about the equipment at this point because we don't know how well
+it will work for our coded implementation. I am hoping that it is successful, but we will need the right combination
+of hardware and software for everything to work. The next step is to get cables, which is our biggest thing that's
+getting in our way, and go from there.

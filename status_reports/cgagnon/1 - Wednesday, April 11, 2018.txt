@@ -1,0 +1,19 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 1
+Date: 04-11-18
+
+What have you completed since the last report?
+
+This is my first report. Yesterday we went over the general class procedures and
+learned about what we'd be doing for the Practicum. So far I've completed a refactoring
+of the notes for this meeting. This helped me review what we discussed during the meeting.
+
+What do you plan to complete by the next report?
+
+By the next report I plan to take a look at yaml and if I find time also look at
+the Ansible tutorials.
+
+What is getting in your way?
+
+I don't think anything will get in my way since this is just a learning thing.
+Maybe it'll take me a long time to learn, but that's ok too :) 

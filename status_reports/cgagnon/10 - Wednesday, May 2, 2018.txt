@@ -1,0 +1,29 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 10
+Date: 05-02-18
+
+What have you completed since the last report?
+
+Since the last report we've been able to update our Trello tasks and review the tasks
+which we'll be completing next. We're able to meet with Michael in order to further
+understand how we'll be completing our Practicum.
+
+What do you plan to complete by the next report?
+
+By Friday we plan to have more work done on our cloud proposal, and I plan to have
+submitted some information about Ansible to the discussion. We're planning on meeting
+ Saturday, where I want to go over our change management policy with the group. We
+ will need to paste our history files when we submit changes and if possible
+ elaborate on that file with what the commands actually do mapped to what's
+ actually been done. It's been a fun ride learning about what we'll be able to do
+ next and seeing just how far we've come in the short period of a couple of weeks.
+ I'm excited.
+
+
+What is getting in your way?
+
+Change management ended up being a major time-suck over the week. I had talked with some
+group members who said that servers were burned down and reimaged without the people doing
+that change communicating it to the group. I feel like that's a major no-no and something that
+we need to address as a team. It caused issues when another group member attempted to log back in
+to the iSCSI controller and couldn't because the password which was set apparently wasn't working anymore.

@@ -1,0 +1,35 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 19
+Date: 05-23-18
+
+What have you completed since the last report?
+
+Phew, another day down and another progress report. Honestly I haven't completed
+much since the last status report; right now I'm working at getting caught up in
+everything since we're gone on vacation over the past week or so. What I did do is
+help oversee the process of getting OpenStack installed on our hardware. I had to
+leave early unfortunately since I had a class at 6:00 pm, but what I saw looked like
+some minor issues which need to be resolved if the install is going to be successful.
+
+
+What do you plan to complete by the next report?
+
+The next step is ensuring that things get resolved and we're able to continue moving
+forward with our on-premises portion of the Practicum. I believe that it's also important
+that I spend the time being able to get a good start on the cloud portion of this
+Practicum. The next things that I hope to be able to contribute to will be writing some
+Ansible code as well as planning out our next steps for the rest of the on-prem
+Practicum with the rest of the team.
+
+
+What is getting in your way?
+
+What I've learned is that there are certain days where I'm able to be more
+productive than others. This is due to the work schedule that I've been using
+this quarter and didn't previously think about. The days seem to have gone by
+without me being able to contribute as much as I'd hoped; where I thought that
+I'd be able to get my Linux homework done easily and also work on the Practicum,
+it didn't actually turn out that way. What actually ended up happening is that
+I got stuck in the process of automating the Django/Postgres install that we're
+doing and of course it was something small in software which I'd previously
+overlooked but ended up preventing me from being able to get my work done.

@@ -1,0 +1,25 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 8
+Date: 04-27-18
+
+What have you completed since the last report?
+
+I've looked into Trello and the assignments which we're graded with its use via Canvas.
+ Since Wednesday I haven't made as much progress as I would've liked to have made. I got
+stuck on some code I was writing for my Linux class and as a result was unable to spend
+as much time as I wanted to on the Practicum. 
+
+What do you plan to complete by the next report?
+
+Our next report will be after our Saturday meeting! There'll be a lot going on, mainly with
+an installation of Open Stack in addition to Ansible and potentially some networking.
+I am hoping to be able to bring our Change Management process to the forefront so that
+we're able to better understand what changes are to be made and what's already been changed.
+
+What is getting in your way?
+
+This time around it's time management; I have ADHD and I tend to get sucked inside of
+tasks without realizing how long I'm really spending on them. This is great in some ways
+because I get to learn a lot of interesting and useful things, but not so great when
+it stretches me thin and I'm unable to complete other tasks. I am hoping that I can corral
+the cats in my brain so that I'm able to better work with my disability.

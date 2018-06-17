@@ -1,0 +1,38 @@
+---
+ - name: Create instance(s)
+   hosts: localhost
+   connection: local
+   gather_facts: no
+
+   vars:
+     service_account_email: testing@nti-460.iam.gserviceaccount.com
+     credentials_file: /Users/codes/__SCHOOL/SCC_NTI460/ansible_cloud_project/final/NTI-460-0efee1cf66af.json
+     project_id: nti-460
+     zone: us-west1-b
+     machine_type: n1-standard-1
+     image: centos-7
+
+   tasks:
+   - name: Launch NFS server
+     gce:
+        instance_names: nfs
+        zone: "{{ zone }}"
+        machine_type: "{{ machine_type }}"
+        image: "{{ image }}"
+        image_family: "{{ image }}"
+        service_account_email: "{{ service_account_email }}"
+        credentials_file: "{{ credentials_file }}"
+        project_id: "{{ project_id }}"
+        tags:
+          - nfs-server
+        metadata: '{"startup-script" : "curl https://raw.githubusercontent.com/codycodes/SCC_NTI460/master/ansible_cloud_project/final/instance_config_scripts/nfs_server.sh > nfs.sh; chmod +x ./nfs.sh; ./nfs.sh"}'
+     register: gce
+
+   - debug: msg=" NFS server IP = {{ gce.instance_data[0].private_ip }}"
+
+   - name: adding instance to the groups
+     lineinfile:
+       dest: /etc/ansible/hosts
+       insertafter: '^\[nfs-server\]'
+       line: "{{ gce.instance_data[0].private_ip }}"
+       state: present

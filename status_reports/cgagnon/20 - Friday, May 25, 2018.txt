@@ -1,0 +1,26 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 20
+Date: 05-25-18
+
+What have you completed since the last report?
+
+Today I installed Ansible on my MacOS and started learning more about how to write
+scripts for it. I am excited because I may have the opportunity to not only deploy
+Ansible for this Practicum, but also potentially for the MakerSpace which I volunteer
+at.
+
+
+What do you plan to complete by the next report?
+
+I am hoping to be able to write some code soon to be more productive with Ansible.
+My biggest wish would be having the ability to spin up an instance on Google Cloud
+by the end of the weekend.
+
+What is getting in your way?
+
+I didn't make as much progress as I would have hoped, but since it's Memorial Day
+Weekend, I'm hoping to be able to recoup my lost time over the past week and work
+with the team for the on-premise project in addition to the cloud project. Mainly,
+it's still time management which is getting in my way. I believe I'll get more done
+when I'm able to; going on vacation has kinda thrown me all out of whack and I'm just
+now getting back to the schedule I had before.

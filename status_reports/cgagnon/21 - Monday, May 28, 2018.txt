@@ -1,0 +1,31 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 21
+Date: 05-28-18
+
+What have you completed since the last report?
+
+I spent time learning about Ansible today as well as throwing together a mini-guide
+which will help me and my classmates/other when we want to use GCP to deploy
+instances from Ansible or another configuration management tool to cloud platforms.
+I was actually surprised by how easy it was to set everything up, and my mind is
+filling up with ideas about what I might want to be able to implement with Ansible.
+
+
+What do you plan to complete by the next report?
+
+I may step out of my comfort zone or not with this part of the project; I could
+easily adapt my Linux code for this class, or I could go all out and do something
+that would be really fun to work on but might end up taking too much time if I'm
+not careful when scoping it out. I am hoping by the next report I have these ideas
+solidified so I'm able to create some goals and get more done sooner!
+
+What is getting in your way?
+
+A weird one, but being able to hit a wall before I see you tomorrow so that I'm able
+to get more out of our meeting 😁. I'm hoping that I'll be able to find some issues
+with my use of Ansible that I will need assistance or knowledge of to be able to
+get things working by then or it might be a thing that takes longer than it needs to.
+Or maybe it'll be getting that idea which will be a complete monster of a challenge,
+which will prevent me from getting things done? At any rate, getting things done
+faster would be a plus so that I'm more comfortable with this part of the Practicum.
+It would definitely be a plus.

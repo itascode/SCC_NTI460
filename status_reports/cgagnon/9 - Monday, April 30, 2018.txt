@@ -1,0 +1,35 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 9
+Date: 04-30-18
+
+What have you completed since the last report?
+
+Over the weekend we're able to complete adding VLANs and reconfiguring SSH access to the multilayer
+switch. While we had this functionality previously, I compiled this information into a script which
+fleshes out some things that weren't previously configured, and makes the process scalable.
+This functionality allows us to connect to the switch from anywhere on Lisanet, which is pretty rad.
+We will be able to use this configuration along with others to get the InterVLAN routing setup as well
+as anything else where remote connectivity to the switch is involved. We also cracked open a computer
+case to check the SATA ports on it, since we're told that there was an issue where it wasn't booting
+into XenServer automatically; we've resolved this issue by finding that there's only SATA0 plugged
+in to the computer and that we needed to manually change the BIOS settings to not look for devices
+plugged into SATA1 & SATA2. I also setup some Trello tasks today which we'll begin to be able to use
+for change management procedures and better project tracking.
+
+What do you plan to complete by the next report?
+
+I hope to push more code to GitHub which is useful to our project and better understand the 
+next tasks that will need to be completed via Slack and out Trello. If I get my Mac back by
+the next report I hope to push the code I've made to GitHub. Otherwise I'll probably be putting
+it on Slack. I am hoping that we'll be able to flesh out the networking stuff so that we're able
+to proceed accordingly.
+
+What is getting in your way?
+
+It sounds like we're meeting today at 5:00 pm, but I will probably be stuck at work during this time.
+I believe that the networking and communication is an issue which is getting better as we work
+more together. I am excited that everyone is so passionate about this practicum; it makes me want
+to contribute more to the project. Having a better understanding of what's next will help enable
+me to make that contribution. Networking and other technologies may be a bit confusing, but are a lot
+easier to work on when we know exactly what needs to be done; this will be accomplished through
+working as a team.

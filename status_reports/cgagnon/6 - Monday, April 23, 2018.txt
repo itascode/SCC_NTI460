@@ -1,0 +1,20 @@
+Student Name: Cody Antonio Gagnon
+Status Report # 6
+Date: 04-23-18
+
+What have you completed since the last report?
+
+I've been working on the Cisco multilayer switch and helping my teammates with the Xen
+Server installs today. I got SSH access setup on the switch which eases the access of the switch.
+
+What do you plan to complete by the next report?
+
+I will have written the script I used to connect via SSH to the switch, and also will
+have learned about Ansible PlayBooks and gotten some experience with them.
+
+What is getting in your way?
+
+Time management is an issue as we need to be able to find when everyone is able to meet;
+now we're able to meet on Saturdays though, so I guess the next biggest thing would be
+setting and reaching milestones and really just optimizing our time spent collaborating
+(e.g. automating).
