@@ -1,0 +1,39 @@
+---
+ - name: Create instance(s)
+   hosts: localhost
+   connection: local
+   gather_facts: no
+
+   vars:
+     service_account_email: testing@nti-460.iam.gserviceaccount.com
+     credentials_file: /Users/codes/__SCHOOL/SCC_NTI460/ansible_cloud_project/final/NTI-460-0efee1cf66af.json
+     project_id: nti-460
+     zone: us-west1-b
+     machine_type: n1-standard-1
+     image: centos-7
+
+   tasks:
+   - name: Launch instance server
+     gce:
+         instance_names: ldap
+         zone: "{{ zone }}"
+         machine_type: "{{ machine_type }}"
+         image: "{{ image }}"
+         image_family: "{{ image }}"
+         service_account_email: "{{ service_account_email }}"
+         credentials_file: "{{ credentials_file }}"
+         project_id: "{{ project_id }}"
+         tags:
+           - "ldap-server"
+           - "http-server"
+         metadata: '{"startup-script" : "curl https://raw.githubusercontent.com/codycodes/SCC_NTI460/master/ansible_cloud_project/final/instance_config_scripts/ldap_server.sh > ldap.sh; chmod +x ./ldap.sh; ./ldap.sh"}'
+     register: gce
+
+   - debug: msg=" Ldap server IP = {{ gce.instance_data[0].private_ip }}"
+
+   - name: adding instances to the groups
+     lineinfile:
+       dest: /etc/ansible/hosts
+       insertafter: '^\[ldap-server\]'
+       line: "{{ gce.instance_data[0].private_ip }}"
+       state: present
