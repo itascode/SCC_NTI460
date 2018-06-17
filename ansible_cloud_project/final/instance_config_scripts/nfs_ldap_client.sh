@@ -1,6 +1,8 @@
 #!/bin/bash
 apt-get update
 
+echo "ARGUMENTS $1 $2"
+
 export DEBIAN_FRONTEND=noninteractive
 debconf_url='https://raw.githubusercontent.com/codycodes/Linux_at_SCC_NTI/master/NTI310/automagic_install/ldab_5_nfs_ldap/debconf'
 wget --no-verbose -P /tmp/ $debconf_url
