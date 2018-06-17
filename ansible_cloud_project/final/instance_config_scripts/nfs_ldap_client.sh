@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get update
+# apt-get update
 
 echo "ARGUMENTS $1 $2"
 
