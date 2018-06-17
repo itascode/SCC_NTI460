@@ -4,7 +4,7 @@ apt-get update
 echo "ARGUMENTS $1 $2"
 
 export DEBIAN_FRONTEND=noninteractive
-debconf_url='https://raw.githubusercontent.com/codycodes/Linux_at_SCC_NTI/master/NTI310/automagic_install/ldab_5_nfs_ldap/debconf'
+debconf_url='https://raw.githubusercontent.com/codycodes/Linux_at_SCC_NTI/master/NTI310/automagic_install/ldap_5_nfs_ldap/debconf'
 wget --no-verbose -P /tmp/ $debconf_url
 sed -i.bak "\,ldap://,s,$,$1," /tmp/debconf # add internal ip to debconf
 while read line; do echo "$line" | debconf-set-selections; done < /tmp/debconf # read each line as input to set debconf
