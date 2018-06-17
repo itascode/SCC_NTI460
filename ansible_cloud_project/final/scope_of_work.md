@@ -30,7 +30,7 @@ We already came into this project with experience in the cloud that we've garner
 #### 2.1 Cloud Infrasctructure Diagram
 
 <p align="center">
-  <img src="https://github.com/codycodes/SCC_NTI460/blob/master/ansible_cloud_project/final/ldap_nfs_cloud_diagram.png" alt="Ansible GCE Cloud Infrastructure Diagram LDAP NFS Clients" />
+  <img src="https://github.com/codycodes/SCC_NTI460/raw/master/ansible_cloud_project/final/ldap_nfs_cloud_diagram.png" alt="Ansible GCE Cloud Infrastructure Diagram LDAP NFS Clients" />
 </p>
 
 
